@@ -47,10 +47,10 @@ El curso consta de clases teóricas, ejercicios y laboratorio de análisis de da
 
 ### Día 7.   
 * Teórico: Introducción al Machine Learning. Datos de entrenamiento, prueba y validación. Ejemplos en ciencia de la aplicación de este tipo de modelos. Regresión logística/SVM/Random forest. Análisis discriminante. ¿Qué son las redes neuronales? Concepto.   
-* Práctico: Lectura e interpretación de publicaciones científicas.   
+* Práctico: Presentación de un problema para resolver aplicando un modelo de aprendizaje supervisado.  
 
 ### Día 8.   
-* Práctico: Presentación de un problema para resolver aplicando un modelo de aprendizaje supervisado.   
+* Práctico: Lectura e interpretación de publicaciones científicas.   
 * Práctico: Continúa el desarrollo de la parte práctica y presentaciones a cargo de los estudiantes.  
 
 ### Día 9.  
