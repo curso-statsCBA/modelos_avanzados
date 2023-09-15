@@ -13,13 +13,17 @@ El horario de cursado es de 8:30 a 13:30. Se debe asistir con su propia computad
 https://bbolker.github.io/mixedmodels-misc/glmmFAQ 
 ### Introducción a modelos mixtos
 https://peerj.com/articles/4794/
+### Modelos mixtos con correlaciones
+https://bbolker.github.io/mixedmodels-misc/notes/corr_braindump.html   
 ### An Introduction to Statistical Learning (gratis)
 https://www.statlearning.com/
-### 
+### The Elements of Statistical Learning (gratis)
+https://hastie.su.domains/ElemStatLearn/   
 
-El curso consta de clases teóricas, ejercicios y laboratorio de análisis de datos grupal.   
 
 ## Cronograma simplificado.   
+
+El curso consta de clases teóricas, ejercicios y laboratorio de análisis de datos grupal.   
 
 ### Día 1.   
 * Teórico: Contenido de la materia. Los modelos estadísticos como hipótesis estadísticas y el test o selección simultánea de múltiples hipótesis estadísticas empleando la Teoría de la Información.     
