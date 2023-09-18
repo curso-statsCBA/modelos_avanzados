@@ -19,6 +19,9 @@ https://bbolker.github.io/mixedmodels-misc/notes/corr_braindump.html
 https://www.statlearning.com/
 ### The Elements of Statistical Learning (gratis)
 https://hastie.su.domains/ElemStatLearn/   
+### Introduction to Generalized Additive Models with R and mgcv
+Video de Gavin Simpson
+https://www.youtube.com/watch?v=sgw4cu8hrZM&t=8997s
 
 
 ## Cronograma simplificado.   
