@@ -8,15 +8,15 @@ Este curso se dictará del 11 al 22 de setiembre de 2023 en forma **presencial**
 
 El horario de cursado es de 8:30 a 13:30. Se debe asistir con su propia computadora personal y los softwares R y RStudio instalados y en su última versión. Se sugiere descargar previamente los siguientes paquetes: *ape, blmeco, car, caret, class, cluster, ClusterR, emmeans, e1071, fpc, factoextra, gamm4, geodata, ggeffects, ggmap, ggplot2, glmnet, gratia, gstat, ILRS2, lme4, lmtest, lmerTest, MASS, mclust, mgcv, nlme, OpenStreetMap, pbkrtest, pscl, randomForest, RLRsim, ROCR, sp, tree, tidygam, vegan* y *viridis*.   
 
-## ![Descarga del material práctico](https://github.com/curso-statsCBA/modelos_avanzados/archive/refs/heads/main.zip)
+## Descarga del material práctico ![Link](https://github.com/curso-statsCBA/modelos_avanzados/archive/refs/heads/main.zip)
 
 ## Links útiles
-### ![Ayuda general GLMM (de Ben Bolker)](https://bbolker.github.io/mixedmodels-misc/glmmFAQ) 
-### ![Introducción a modelos mixtos](https://peerj.com/articles/4794/)
-### ![Modelos mixtos con correlaciones](https://bbolker.github.io/mixedmodels-misc/notes/corr_braindump.html)   
-### ![An Introduction to Statistical Learning (gratis)](https://www.statlearning.com/)
-### ![The Elements of Statistical Learning (gratis)](https://hastie.su.domains/ElemStatLearn/)   
-### ![Introduction to Generalized Additive Models with R and mgcv (Video de Gavin Simpson)](https://www.youtube.com/watch?v=sgw4cu8hrZM&t=8997s)
+### Ayuda general GLMM (de Ben Bolker) ![Link](https://bbolker.github.io/mixedmodels-misc/glmmFAQ) 
+### Introducción a modelos mixtos ![Link](https://peerj.com/articles/4794/)
+### Modelos mixtos con correlaciones ![Link](https://bbolker.github.io/mixedmodels-misc/notes/corr_braindump.html)   
+### An Introduction to Statistical Learning (gratis) ![Link](https://www.statlearning.com/)
+### The Elements of Statistical Learning (gratis) ![Link](https://hastie.su.domains/ElemStatLearn/)   
+### Introduction to Generalized Additive Models with R and mgcv (Video de Gavin Simpson) ![Link](https://www.youtube.com/watch?v=sgw4cu8hrZM&t=8997s)
 
 
 ## Cronograma simplificado.   
@@ -25,7 +25,7 @@ El curso consta de clases teóricas, ejercicios y laboratorio de análisis de da
 
 ### Día 1.   
 * Teórico: Contenido de la materia. Los modelos estadísticos como hipótesis estadísticas y el test o selección simultánea de múltiples hipótesis estadísticas empleando la Teoría de la Información. [Link](teoricos/Teor1.pdf)     
-* Práctico: Ejercicios de LM y nivelación en R. [Link instrucciones](TP1/TP1.html)   
+* Práctico: Ejercicios de LM y nivelación en R. [Link](TP1/TP1.html)   
 
 ### Día 2.   
 * Teórico: Componentes de los GLM: predictor lineal de las variables explicativas, función de enlace y errores aleatorios. Modelos lineales generalizados con estructura de errores binomial.[Link 1](teoricos/Teor2.1.pdf) - [Link 2](teoricos/Teor2.2.pdf)      
