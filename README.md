@@ -10,16 +10,16 @@ El horario de cursado es de 8:30 a 13:30. Se debe asistir con su propia computad
 
 ## Descarga del material práctico   
 
-![Link](https://github.com/curso-statsCBA/modelos_avanzados/archive/refs/heads/main.zip)
+[Link](https://github.com/curso-statsCBA/modelos_avanzados/archive/refs/heads/main.zip)
 
 ## Links útiles   
 
-* Ayuda general GLMM (de Ben Bolker) ![Link](https://bbolker.github.io/mixedmodels-misc/glmmFAQ)   
-* Introducción a modelos mixtos ![Link](https://peerj.com/articles/4794/)   
-* Modelos mixtos con correlaciones ![Link](https://bbolker.github.io/mixedmodels-misc/notes/corr_braindump.html)    
-* An Introduction to Statistical Learning (gratis) ![Link](https://www.statlearning.com/)   
-* The Elements of Statistical Learning (gratis) ![Link](https://hastie.su.domains/ElemStatLearn/)     
-* Introduction to Generalized Additive Models with R and mgcv (Video de Gavin Simpson)  ![Link](https://www.youtube.com/watch?v=sgw4cu8hrZM&t=8997s)   
+* Ayuda general GLMM (de Ben Bolker) [Link](https://bbolker.github.io/mixedmodels-misc/glmmFAQ)   
+* Introducción a modelos mixtos [Link](https://peerj.com/articles/4794/)   
+* Modelos mixtos con correlaciones [Link](https://bbolker.github.io/mixedmodels-misc/notes/corr_braindump.html)    
+* An Introduction to Statistical Learning (gratis) [Link](https://www.statlearning.com/)   
+* The Elements of Statistical Learning (gratis) [Link](https://hastie.su.domains/ElemStatLearn/)     
+* Introduction to Generalized Additive Models with R and mgcv (Video de Gavin Simpson)  [Link](https://www.youtube.com/watch?v=sgw4cu8hrZM&t=8997s)   
 
 ## Cronograma simplificado.   
 
