@@ -1,8 +1,7 @@
 # Modelos Estadísticos Avanzados
 Curso de posgrado para el doctorado en Cs. Biológicas de la Universidad Nacional de Córdoba.   
 
-**PÁGINA EN CONSTRUCCIÓN**   
-*Disculpe las molestias*   
+![](foto2023.jpeg)
 
 Este curso se dictará del 11 al 22 de setiembre de 2023 en forma **presencial** el aula del Doctorado en Ciencias Biológicas (FCEFyN, Universidad Nacional de Córdoba), Vélez Sársfield esq. Duarte Quiros, Ciudad de Córdoba.    
 
