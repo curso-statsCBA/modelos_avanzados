@@ -4,7 +4,7 @@
 
 Curso de posgrado para el doctorado en Cs. Biológicas de la Universidad Nacional de Córdoba.   
 
-Este curso se dictará del 11 al 22 de setiembre de 2023 en forma **presencial** el aula del Doctorado en Ciencias Biológicas (FCEFyN, Universidad Nacional de Córdoba), Vélez Sársfield esq. Duarte Quiros, Ciudad de Córdoba.    
+Este curso se dictará del 3 al 14 de agosto de 2026 en forma **presencial** el aula 700-701 del Centro Nacional PLM (frente al estacionamiento de la FCEFyN, Ciudad Universitaria).    
 
 El horario de cursado es de 8:30 a 13:30. Se debe asistir con su propia computadora personal y los softwares R y RStudio instalados y en su última versión. Se sugiere descargar previamente los siguientes paquetes: *ape, blmeco, car, caret, class, cluster, ClusterR, emmeans, e1071, fpc, factoextra, gamm4, geodata, ggeffects, ggmap, ggplot2, glmnet, gratia, gstat, ILRS2, lme4, lmtest, lmerTest, MASS, mclust, mgcv, nlme, OpenStreetMap, pbkrtest, pscl, randomForest, RLRsim, ROCR, sp, tree, tidygam, vegan* y *viridis*.   
 
