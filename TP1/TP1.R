@@ -1,3 +1,5 @@
+## Practico 1. Modelos lineales
+
 library(ISLR2)
 library(car)
 library(MASS)
