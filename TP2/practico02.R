@@ -1,13 +1,14 @@
 ## Práctico 2. Modelos Binomiales
 
-#############
-### Caso1 ###
-#############
+#───────────#
+#   Caso1   #
+#───────────#
+library(performance)
 
-ven <- read.table("veneno.txt", header = TRUE)
+ven <- read.table("TP2/veneno.txt", header = TRUE)
 
 # construcción de la variable respuesta
-rta <- cbind(ven$muertos, ven$tot-ven$muertos)
+rta <- cbind(ven$muertos, ven$tot - ven$muertos)
 
 #modelo
 vfit <- glm(rta ~ veneno + dosis, data = ven, family = binomial(logit))
@@ -15,13 +16,15 @@ vfit <- glm(rta ~ veneno + dosis, data = ven, family = binomial(logit))
 #significancia según el estadístico de Wald
 summary(vfit)
 
-#análisis de la devianza 
+#análisis de la devianza
 anova(vfit, test = "Chisq")
 
 #examen gráfico de los residuos
 layout(matrix(1:4, 2, 2))
 plot(vfit)
 layout(1)
+
+check_model(vfit)
 
 #examen sobre sobredispersión
 vfit2 <- glm(rta ~ veneno + dosis, data = ven, family = quasibinomial(logit))
@@ -32,25 +35,24 @@ LP <- vfit$linear.predictors^2
 vfit3 <- glm(rta ~ veneno + dosis + LP, data = ven, family = binomial(logit))
 summary(vfit3)
 
-#INTERPRETACIÓN DE PARÁMETROS
+# interpretación de parámetros
 exp(vfit$coeff)
 
 # parámetros faltantes:
-
 ven$veneno2 <- relevel(ven$veneno, "R")
 reor.vfit <- glm(rta ~ veneno2 + dosis, family = binomial(logit), data = ven)
 summary(reor.vfit)
 exp(reor.vfit$coeff)
-1/exp(reor.vfit$coeff)
+1 / exp(reor.vfit$coeff)
 
-############
-## Caso 2 ##
-############
+#───────────#
+#   Caso2   #
+#───────────#
 library(caret)
 library(ggplot2)
 library(ROCR)
 
-datos <- read.table("uta.txt", header = TRUE)
+datos <- read.table("TP2/uta.txt", header = TRUE)
 
 # modelo
 fit <- glm(Uta ~ PA.ratio, data = datos, family = binomial(logit))
@@ -61,9 +63,9 @@ summary(fit)
 # interpretación de parámetros.
 exp(fit$coefficients)
 
-# notar cómo se vuelve más interpretable el intercepto al 
+# notar cómo se vuelve más interpretable el intercepto al
 # centrar la variable.
-datos$PA.ratio.2 <- datos$PA.ratio - mean(datos$PA.ratio, na.rm = T)
+datos$PA.ratio.2 <- datos$PA.ratio - mean(datos$PA.ratio, na.rm = TRUE)
 
 fit2 <- glm(Uta ~ PA.ratio.2, data = datos, family = binomial(logit))
 summary(fit2)
@@ -76,6 +78,8 @@ anova(fit2, test = "Chisq")
 layout(matrix(1:4, 2, 2))
 plot(fit2)
 layout(1)
+
+check_model(fit2)
 
 # examen sobre el enlace
 LP <- fit2$linear.predictors^2
@@ -97,15 +101,22 @@ g1
 
 #matriz de confusión
 obs <- datos$Uta
-esp <- as.numeric(predict(fit2, type="response") > 0.5)
+esp <- as.numeric(predict(fit2, type = "response") > 0.5)
 table(esp, obs)
 
 confusionMatrix(table(esp, obs)) # caret
 
 # curva ROC sobre los datos de entrenamiento (!)
 # (pocos datos para que sea informativo, sólo como ejemplo)
-pr <- prediction(esp, datos$Uta)
+pred <- predict(fit2, type = "response")
+pr <- prediction(pred, datos$Uta)
 prf <- performance(pr, measure = "tpr", x.measure = "fpr")
-plot(prf)
+plot(prf, col = "blue", lwd = 2, main = "ROC Curve")
+abline(a = 0, b = 1, lty = 2, col = "gray")
+
+# calcular AUC
+auc <- performance(pr, measure = "auc")
+auc_value <- auc@y.values[[1]]
+text(0.6, 0.2, paste("AUC =", round(auc_value, 3)))
 
 ### END ###
