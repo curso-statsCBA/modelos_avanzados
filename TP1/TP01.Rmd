@@ -1,0 +1,43 @@
+---
+title: "Práctico 1"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+En este ejemplo, analizaremos el efecto de diferentes variables sobre el precio de las viviendas en suburbios de Boston. Datos del paquete ISLR2. 
+
+```{r eval = F}
+library(ISLR2)
+library(car)
+library(MASS)
+library(GGally)
+
+data(Boston)
+?Boston
+
+g1 <- ggpairs(Boston, aes(alpha = 0.1)) + theme_bw()
+g1
+
+fit <- lm(medv ~ ., data = Boston)
+vif(fit)
+
+fit2 <- lm(medv ~ . - tax, data = Boston)
+vif(fit2)
+
+layout(matrix(1:4,2,2))
+plot(fit2)
+layout(1)
+
+summary(fit2)
+Anova(fit2, type = "II")
+
+stepAIC(fit2)
+
+```
+
+## Ejercicios
+1. Modelar el número de gorriones de las marismas (*Ammospiza caudacuta*) en función de varias variables que describen la cobertura de distintas especies de plantas. La variable respuesta es banded (número de gorriones), las variables de cobertura son Avgmaxht, Avgdens, ht.thatch, S.patens, Distichlis, S.alternifloraShort, S.alternifloraTall, Juncus, Bare, Other, Phragmites, Shrub, Tallsedge, Water.   
+2. A partir de estos ejemplo pretendemos que seleccione un conjunto de datos propio y aplique modelos lineales generales para analizarlo. 
