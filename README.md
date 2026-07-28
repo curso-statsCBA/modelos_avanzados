@@ -26,7 +26,7 @@ El curso consta de clases teóricas, ejercicios y laboratorio de análisis de da
 
 ### Día 1.   
 * Teórico: Contenido de la materia. Los modelos estadísticos como hipótesis estadísticas y el test o selección simultánea de múltiples hipótesis estadísticas empleando la Teoría de la Información. [Link](teoricos/Teor1.pdf)     
-* Práctico: Ejercicios de LM y nivelación en R. [Link](TP1/TP1.html)   
+* Práctico: Ejercicios de LM y nivelación en R. [Link](TP1/TP01.html)   
 
 ### Día 2.   
 * Teórico: Componentes de los GLM: predictor lineal de las variables explicativas, función de enlace y errores aleatorios. Modelos lineales generalizados con estructura de errores binomial.[Link 1](teoricos/Teor2.1.pdf) - [Link 2](teoricos/Teor2.2.pdf)      

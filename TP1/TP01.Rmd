@@ -14,6 +14,7 @@ library(ISLR2)
 library(car)
 library(MASS)
 library(GGally)
+library(performance)
 
 data(Boston)
 ?Boston
@@ -31,13 +32,20 @@ layout(matrix(1:4,2,2))
 plot(fit2)
 layout(1)
 
+check_model(fit2)
+model_performance(fit)
+
 summary(fit2)
 Anova(fit2, type = "II")
 
 stepAIC(fit2)
-
 ```
 
 ## Ejercicios
-1. Modelar el número de gorriones de las marismas (*Ammospiza caudacuta*) en función de varias variables que describen la cobertura de distintas especies de plantas. La variable respuesta es banded (número de gorriones), las variables de cobertura son Avgmaxht, Avgdens, ht.thatch, S.patens, Distichlis, S.alternifloraShort, S.alternifloraTall, Juncus, Bare, Other, Phragmites, Shrub, Tallsedge, Water.   
-2. A partir de estos ejemplo pretendemos que seleccione un conjunto de datos propio y aplique modelos lineales generales para analizarlo. 
+1. Modelar el número de gorriones de las marismas (*Ammospiza caudacuta*) en función de varias
+variables que describen la cobertura de distintas especies de plantas. La variable respuesta es
+banded (número de gorriones), las variables de cobertura son Avgmaxht, Avgdens, ht.thatch, S.patens,
+Distichlis, S.alternifloraShort, S.alternifloraTall, Juncus, Bare, Other, Phragmites, Shrub, Tallsedge,
+Water.   
+2. A partir de estos ejemplo pretendemos que seleccione un conjunto de datos propio y aplique 
+modelos lineales generales para analizarlo. 
