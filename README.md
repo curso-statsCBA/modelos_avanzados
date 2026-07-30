@@ -38,7 +38,7 @@ El curso consta de clases teóricas, ejercicios y laboratorio de análisis de da
 
 ### Día 4.
 * Teórico: Definición de efectos fijos y efectos aleatorios y su interpretación biológica. Uso de los Modelos Lineares Generalizados Mixtos (GLMM) para modelar restricciones de aleatorización de unidades muestrales y el diseño experimental. El ajuste de los GLMM por Máximo de Verosimilitud Restringido (REML). Test de efectos y selección de modelos en los GLMM. [Link](teoricos/Teor4.pdf)   
-* Práctico: Ejercicios de GLMM. [Link](TP4/practico04.html)    
+* Práctico: Ejercicios de GLMM. [Link](TP4/TP04.html)    
 
 ### Día 5.
 * Teórico: Autocorrelación espacial y temporal. Como detectarla y que tipo de modelos aplicar para incluir la correlación en los modelos. [Link](teoricos/Teor5.pdf)  
