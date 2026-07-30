@@ -42,7 +42,7 @@ El curso consta de clases teóricas, ejercicios y laboratorio de análisis de da
 
 ### Día 5.
 * Teórico: Autocorrelación espacial y temporal. Como detectarla y que tipo de modelos aplicar para incluir la correlación en los modelos. [Link](teoricos/Teor5.pdf)  
-* Práctico: Ejercicios para datos con autocorrelación. [Link](TP5/Práctico-05.html)    
+* Práctico: Ejercicios para datos con autocorrelación. [Link](TP5/TP05.html)    
 
 ### Día 6.
 * Teórico: Los Modelos Aditivos Generalizados (GAM) como generalizaciones no paramétricas y no lineales de los GLM. Componentes de un GAM: función lineal, estructura de los errores, función de enlace y función de suavizado. Utilidad y limitaciones de los GAM ilustrada con ejemplos. Validación y evaluación de la calidad del ajuste en GAM y GAMM. [Link](teoricos/Teor6.pdf)   
