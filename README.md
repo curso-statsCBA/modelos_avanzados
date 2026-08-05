@@ -30,11 +30,11 @@ El curso consta de clases teóricas, ejercicios y laboratorio de análisis de da
 
 ### Día 2.   
 * Teórico: Componentes de los GLM: predictor lineal de las variables explicativas, función de enlace y errores aleatorios. Modelos lineales generalizados con estructura de errores binomial.[Link 1](teoricos/Teor2.1.pdf) - [Link 2](teoricos/Teor2.2.pdf)      
-* Práctico: Ejercicios de distribución binomial. [Link](TP2/practico02.html)     
+* Práctico: Ejercicios de distribución binomial. [Link](TP2/TP02.html)     
 
 ### Día 3.   
 * Teórico: Datos de conteos (Poisson y Binomial Negativa). Sobredispersión de GLM para datos discretos: diagnóstico y soluciones. Modelos de mezcla (mixture models) para datos con exceso de ceros. [Link](teoricos/Teor3.pdf)     
-* Práctico: Ejercicios para datos de conteo. [Link](TP3/practico03.html)     
+* Práctico: Ejercicios para datos de conteo. [Link](TP3/TP03.html)     
 
 ### Día 4.
 * Teórico: Definición de efectos fijos y efectos aleatorios y su interpretación biológica. Uso de los Modelos Lineares Generalizados Mixtos (GLMM) para modelar restricciones de aleatorización de unidades muestrales y el diseño experimental. El ajuste de los GLMM por Máximo de Verosimilitud Restringido (REML). Test de efectos y selección de modelos en los GLMM. [Link](teoricos/Teor4.pdf)   
