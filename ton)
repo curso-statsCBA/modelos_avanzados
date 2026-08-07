@@ -1,0 +1,74 @@
+Boston                  package:ISLR2                  R Documentation
+
+_B_o_s_t_o_n _D_a_t_a
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     A data set containing housing values in 506 suburbs of Boston.
+
+_U_s_a_g_e:
+
+     Boston
+     
+_F_o_r_m_a_t:
+
+     A data frame with 506 rows and 13 variables.
+
+     ‘crim’
+          per capita crime rate by town.
+
+     ‘zn’
+          proportion of residential land zoned for lots over 25,000
+          sq.ft.
+
+     ‘indus’
+          proportion of non-retail business acres per town.
+
+     ‘chas’
+          Charles River dummy variable (= 1 if tract bounds river; 0
+          otherwise).
+
+     ‘nox’
+          nitrogen oxides concentration (parts per 10 million).
+
+     ‘rm’
+          average number of rooms per dwelling.
+
+     ‘age’
+          proportion of owner-occupied units built prior to 1940.
+
+     ‘dis’
+          weighted mean of distances to five Boston employment centres.
+
+     ‘rad’
+          index of accessibility to radial highways.
+
+     ‘tax’
+          full-value property-tax rate per $10,000.
+
+     ‘ptratio’
+          pupil-teacher ratio by town.
+
+     ‘lstat’
+          lower status of the population (percent).
+
+     ‘medv’
+          median value of owner-occupied homes in $1000s.
+
+_S_o_u_r_c_e:
+
+     This dataset was obtained from, and is slightly modified from, the
+     Boston dataset that is part of the MASS library.  References are
+     available in the MASS library.
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) _An
+     Introduction to Statistical Learning with applications in R_,
+     <https://www.statlearning.com>, Springer-Verlag, New York
+
+_E_x_a_m_p_l_e_s:
+
+     lm(medv ~ crim + rm, data=Boston)
+     
+
