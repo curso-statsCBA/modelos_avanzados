@@ -1,0 +1,16 @@
+---
+title: "Práctico 8. Discusión de trabajos."
+output:
+  html_document:
+    highlight: tango
+---
+
+Discutiremos trabajos que aplican diferentes métodos de aprendizaje
+supervisado. Pueden ser descargados de los siguientes enlaces:
+
+- [Spatiotemporal variation in the role of floral traits in shaping tropical plant-pollinator interactions.](https://onlinelibrary.wiley.com/doi/pdf/10.1111/ele.13958?casa_token=S4XPcCk_6igAAAAA:XEq77-6Tisna6-MWZ3lOJq5R7xnofrGL99dKL0kpTnuNyax0kobAZuH3RrzpeAjmeUMsfbGFnpcBEHc)
+- [Undiscovered Bat Hosts of Filoviruses.](https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0004815)
+- [Roadkill risk and population vulnerability in European birds and mammals.](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2216)
+- [Love Thy Neighbour: Automatic Animal Behavioural Classification of Acceleration Data Using the K-Nearest Neighbour Algorithm.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0088609)
+- [Emissions and meteorological impacts on PM2.5 species concentrations in Southern California using generalized additive modeling](https://www.sciencedirect.com/science/article/pii/S0048969723030851)
+- [Deep learning as a tool for ecology and evolution.](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13901)

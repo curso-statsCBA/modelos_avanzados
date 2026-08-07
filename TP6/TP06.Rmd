@@ -1,7 +1,28 @@
-###############
-### Caso 1. ###
-###############
+---
+title: "Práctico 6. Modelos Aditivos Generalizados"
+output:
+  html_document:
+    highlight: tango
+---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Caso1
+
+En un estudio del bentos marino se muestrearon 45 puntos a lo largo de la costa de Holanda, 
+registrando en cada punto la riqueza de especies. Se registraron además una serie de 
+variables predictoras: pendiente, exposición, salinidad, temperatura y altura respecto al 
+nivel medio de mareas (NAP), penetrabilidad y tamaño medio de grano del sustrato. 
+En este caso, realizaremos un modelo aditivo generalizado utilizando la altura (NAP) 
+y el factor exposición (exposure) como variables explicativas. Se plantea un GAM ya que 
+los gráficos de dispersión sugieren una relación no lineal entre estas variables y la 
+riqueza de especies, y debido a que al aplicar modelos lineales o modelos lineales generalizados 
+se continua observando patrones entre residuos y predichos. Veremos también la forma de introducir 
+términos aleatorios.
+
+```{r, eval=FALSE}
 library(mgcv)
 library(gamm4)
 library(tidygam)
@@ -104,11 +125,21 @@ ggplot(tp3, aes(NAP, Richness, color = exposure)) + geom_line() +
   ) +
   facet_wrap(. ~ exposure)
 
+```
 
-##############
-### Caso 2 ###
-##############
+## Caso 2
+En un trabajo de de selección fenotípica sobre rasgos de la orquídea *Cyclopogon elatus* 
+se intenta conocer si el éxito reproductivo de estas plantas (medido en número de polinios 
+exportados) es influenciado por rasgos como el número de flores y la profundidad de sus 
+nectarios. Utilizaremos estos datos como ejemplo para obtener medidas de concurvidad, 
+y explorar la posible presencia de interacciones entre variables continuas. En particular, 
+existen dos posibles maneras de analizar la interacción entre variables continuas en un gam.
+Los modelos isotrópicos se caracterizan por ser invariantes a la rotación de los ejes, 
+pero no al cambio en la escala. Especialmente buenos para modelos donde ambas variables 
+ienen la misma escala (por ejemplo datos espaciales). Los modelos invariantes a la escala 
+poseen las propiedades inversas: son afectados por la rotación de los ejes (no-isotrópicos).
 
+```{r, eval=FALSE}
 cyc <- read.table("TP6/cyclop.txt", header = TRUE)
 cyc <- na.omit(cyc) # mgcv no admite datos faltantes
 colnames(cyc) <- c("nec", "flo", "lar", "fru", "PF", "pol", "PP")
@@ -186,4 +217,35 @@ ggplot(m5_p, aes(nec, flo, z = pol)) +
   scale_fill_viridis_c() +
   theme_minimal()
 
-### END ###
+```
+
+## Ejercicios
+1- El archivo elecciones2023.txt contiene los resultados de las elecciones PASO 2023 para los 
+circuitos electorales de la ciudad de Córdoba, junto a la geolocalización aproximada del 
+centro de estos circuitos. Elija un partido político y construya un mapa de la estructura 
+espacial de sus votos utilizando gam. El set de datos incluye el total de electores (padrón)
+pero no el número de votos válidos (suma de todos los partidos), ni blancos, nulos o impugnados.   
+
+ + Tip: base para descargar un mapa y usarlo como base en ggplot2.   
+
+```{r, eval=FALSE}
+library(OpenStreetMap)
+library(ggplot2)
+cba_map <- openmap(
+  upperLeft = c(-31.303436, -64.320779),
+  lowerRight = c(-31.534660, -64.052269),
+  zoom = 12, type = "osm", mergeTiles = TRUE
+)
+cba_map2 <- openproj(cba_map)
+
+cba_plot <- autoplot.OpenStreetMap(cba_map2) +
+  geom_point(...) # completar con lo necesario
+```
+2- El archivo wesdr.txt (originalmente del paquete gss) contiene datos sobre la incidencia de 
+retinoplastía diabética (ret, codificado en 0 o 1) y se intenta modelar esta enfermedad en 
+función del tiempo desde la aparición de la diabetes (dur), el índice de masa corporal (bmi) 
+y el porcentaje de hemoglobina glicosilada en sangre (gly). Construya un modelo y, opcionalmente, 
+utilice matrices de confusión y ROC para revisar su adecuación.   
+3- ¿Tiene usted datos donde espera asociaciones no lineales? (n > 50). Discuta con sus compañeres 
+de mesa, prestando especial atención a: a) el proceso ue originaron los datos, b) la presencia de
+estructuras espaciales o temporales c) Presente sus datos con gráficos y análisis.   

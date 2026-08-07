@@ -46,19 +46,19 @@ El curso consta de clases teóricas, ejercicios y laboratorio de análisis de da
 
 ### Día 6.
 * Teórico: Los Modelos Aditivos Generalizados (GAM) como generalizaciones no paramétricas y no lineales de los GLM. Componentes de un GAM: función lineal, estructura de los errores, función de enlace y función de suavizado. Utilidad y limitaciones de los GAM ilustrada con ejemplos. Validación y evaluación de la calidad del ajuste en GAM y GAMM. [Link](teoricos/Teor6.pdf)   
-* Práctico: Ejercicios de GAM. [Link](TP6/practico06.html)    
+* Práctico: Ejercicios de GAM. [Link](TP6/TP06.html)    
 
 ### Día 7.   
 * Teórico: Introducción al Machine Learning. Datos de entrenamiento, prueba y validación. Ejemplos en ciencia de la aplicación de este tipo de modelos. Regresión logística/SVM/Random forest. Análisis discriminante. ¿Qué son las redes neuronales? Concepto. [Link](teoricos/Teor7-8.pdf)   
-* Práctico: Presentación de un problema para resolver aplicando un modelo de aprendizaje supervisado. [Link](TP7/practico07.html)   
+* Práctico: Presentación de un problema para resolver aplicando un modelo de aprendizaje supervisado. [Link](TP7/TP07.html)   
 
 ### Día 8.   
 * Práctico: Lectura e interpretación de publicaciones científicas.   
-* Práctico: Continúa el desarrollo de la parte práctica y presentaciones a cargo de los estudiantes. [Link](TP8/tp8.html)   
+* Práctico: Continúa el desarrollo de la parte práctica y presentaciones a cargo de los estudiantes. [Link](TP8/TP08.html)   
 
 ### Día 9.  
 * Teórico: Aprendizaje No Supervisado. Datos etiquetados vs. no etiquetados. Gaussian admixture, K-medias, Clustering, Dbscan. [Link](teoricos/Teor9.pdf)   
-* Práctico: Ejercicios con modelos de aprendizaje no supervisado. [Link](TP4/tp9.html)   
+* Práctico: Ejercicios con modelos de aprendizaje no supervisado. [Link](TP9/TP09.html)   
 
 ### Día 10.  
 Evaluación: presentaciones orales con datos propios, habiendo aplicado alguno de los modelos que vimos durante el desarrollo del curso.   
